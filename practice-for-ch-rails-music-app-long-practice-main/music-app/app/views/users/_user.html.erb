@@ -1,0 +1,9 @@
+<ul>
+    <li> <%= user.email %> </li>
+    <% if action == :show %>
+    <li><a href="<%= users_url %>">Users Index</a></li>
+    <% else %>
+    <li><a href="<%= user_url(user) %>">Users Show</a></li>
+    <% end %>
+</ul>
+
